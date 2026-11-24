@@ -1,3 +1,10 @@
+> **This repository:** a Haier MatrixTV DE (HR9676EUF, Google TV 14, MediaTek) setup by [KArT4206](https://github.com/KArT4206), built on [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) (MIT).
+> Changes from upstream:
+> - a 6-app dock (SmartTube, Netflix, JioHotstar, Prime Video, JioCinema, Spotify) with 6 columns, Haier's Live TV package, and animations off
+> - a **Remotes & Accessories** top-bar pill that opens Settings' saved-device list. This adds the `BLUETOOTH_CONNECT` permission and uses `WRITE_SECURE_SETTINGS`, both granted with `pm grant`
+>
+> Notes, restore script and test results are in [`work/`](work/README.md).
+
 <p align="center">
   <a href="https://cleanyour.tv"><img src="https://raw.githubusercontent.com/Gathin23/cleanyourtv/main/docs/banner.png" alt="CleanYourTV. Your TV, minus the ads. Strip the bloatware from any Android TV or Google TV over Wi-Fi and replace the ad-filled home screen with a clean launcher that looks like an Apple TV. No root, no cable, nothing uninstalled, and a one-line restore." width="800"></a>
 </p>
