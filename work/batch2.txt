@@ -1,0 +1,9 @@
+# batch2 telemetry
+com.google.android.feedback                      # Google usage feedback
+tv.anoki.acr.controller                          # Anoki ACR: recognises what is on screen, persistent, boot receiver
+com.mediatek.tv.launcher.partner                 # partner rows on the stock home
+com.mediatek.tv.retaildemo                       # retail demo mode
+com.google.android.play.games                    # preloaded
+com.haier.overseastv.bluetoothspeaker            # TV as Bluetooth speaker, not wanted
+com.google.android.marvin.talkback               # TalkBack, not used
+

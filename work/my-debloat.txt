@@ -1,0 +1,14 @@
+# Haier MatrixTV DE, UKN2.241219.053 - disabled on 2026-11-24 (13 packages). Kept by choice: all streaming apps, Assistant, Chromecast, Miracast, Ambient, updater, setupwraith, stock launcher.
+it.hon.service                                   # Haier hOn IoT service
+com.haier.apps                                   # Haier promo content app
+com.haier.tvhousekeeper                          # "TV housekeeper" cleaner
+com.haier.emanual9603                            # e-manual
+com.haier.oemtabprovider                         # the "Haier" tab on the Google TV home
+com.haier.launcher.haiermatrix                   # Zeasn content launcher, not the system Home
+com.google.android.feedback                      # Google usage feedback
+tv.anoki.acr.controller                          # Anoki ACR: recognises what is on screen, persistent, boot receiver
+com.mediatek.tv.launcher.partner                 # partner rows on the stock home
+com.mediatek.tv.retaildemo                       # retail demo mode
+com.google.android.play.games                    # preloaded
+com.haier.overseastv.bluetoothspeaker            # TV as Bluetooth speaker, not wanted
+com.google.android.marvin.talkback               # TalkBack, not used

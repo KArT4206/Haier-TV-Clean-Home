@@ -351,6 +351,14 @@
                     android:nextFocusDown="@+id/grid" />
 
                 <TextView
+                    android:id="@+id/btnBluetooth"
+                    style="@style/TopButton"
+                    android:singleLine="true"
+                    android:text="@string/bluetooth_pill"
+                    android:drawableStart="@drawable/ic_bluetooth"
+                    android:nextFocusDown="@+id/grid" />
+
+                <TextView
                     android:id="@+id/btnVpn"
                     style="@style/TopButton"
                     android:visibility="gone"

@@ -1,0 +1,2 @@
+# setupwraith: hands Home to the new launcher (costs casting)
+com.google.android.tungsten.setupwraith

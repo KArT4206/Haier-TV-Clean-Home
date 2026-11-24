@@ -835,6 +835,21 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         View btnSettings = findViewById(R.id.btnSettings);
         btnInputs.setOnClickListener(v -> showInputs());
         btnWifi.setOnClickListener(v -> openNetworkPill());
+        // Local change: Bluetooth pill straight to Settings' Remotes & Accessories pairing screen.
+        View btnBluetooth = findViewById(R.id.btnBluetooth);
+        // Opens the saved-devices list (with "Pair accessory"); SliceActivity needs WRITE_SECURE_SETTINGS (pm grant).
+        // Falls back to the pairing search if that permission is missing.
+        btnBluetooth.setOnClickListener(v -> {
+            Intent list = new Intent().setClassName("com.android.tv.settings", "com.android.tv.settings.slice.SliceActivity")
+                    .putExtra("slice_uri", "content://com.android.tv.settings.accessories.sliceprovider/general")
+                    .putExtra("slice_title", getString(R.string.bluetooth_pill))
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            try {
+                startActivity(list);
+            } catch (RuntimeException e) {
+                open(new Intent("com.google.android.intent.action.CONNECT_INPUT").setPackage("com.android.tv.settings"));
+            }
+        });
         btnVpn.setOnClickListener(v -> openVpnPill());
         btnWifi.setOnLongClickListener(v -> {
             open(systemIntent(Settings.ACTION_WIFI_SETTINGS));
@@ -928,6 +943,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         };
         btnInputs.setOnKeyListener(pillKeys);
         btnWifi.setOnKeyListener(pillKeys);
+        findViewById(R.id.btnBluetooth).setOnKeyListener(pillKeys);
         btnVpn.setOnKeyListener(pillKeys);
         btnSettings.setOnKeyListener(pillKeys);
         btnReorder.setOnKeyListener(pillKeys);

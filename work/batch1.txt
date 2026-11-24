@@ -1,0 +1,8 @@
+# batch1 Haier content
+it.hon.service                                   # Haier hOn IoT service
+com.haier.apps                                   # Haier promo content app
+com.haier.tvhousekeeper                          # "TV housekeeper" cleaner
+com.haier.emanual9603                            # e-manual
+com.haier.oemtabprovider                         # the "Haier" tab on the Google TV home
+com.haier.launcher.haiermatrix                   # Zeasn content launcher, not the system Home
+
